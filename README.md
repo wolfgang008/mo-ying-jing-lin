@@ -112,7 +112,7 @@ python -m http.server 8080
 ├── docs/
 │   ├── 作品说明.md             # 比赛作品说明
 │   ├── Prompt对话日志.md       # AI 协作开发完整记录
-│   └── 赛题要求.txt            # 原始赛题与提交要求
+│   └── 赛题要求.md             # 原始赛题与提交要求
 └── README.md
 ```
 
@@ -124,7 +124,7 @@ python -m http.server 8080
 
 - [作品说明](./docs/作品说明.md)
 - [Prompt 对话日志](./docs/Prompt对话日志.md)
-- [赛题要求](./docs/赛题要求.txt)
+- [赛题要求](./docs/赛题要求.md)
 
 ## 比赛成绩
 
