@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="560" viewBox="0 0 1600 560" role="img" aria-labelledby="title desc">
+  <title id="title">墨影惊鳞系统架构</title>
+  <desc id="desc">从玩家输入到水墨渲染的六层处理流程</desc>
+
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8f1df"/>
+      <stop offset="1" stop-color="#e9ddc5"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#5d4b38" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#a93226"/>
+    </marker>
+    <style>
+      .title { font: 700 38px 'Noto Serif SC', 'Microsoft YaHei', 'SimHei', serif; fill: #2c2416; letter-spacing: 5px; }
+      .subtitle { font: 400 18px 'Noto Serif SC', 'Microsoft YaHei', 'SimHei', serif; fill: #756655; letter-spacing: 2px; }
+      .num { font: 700 17px Arial, sans-serif; fill: #f8f1df; }
+      .box-title { font: 700 24px 'Noto Serif SC', 'Microsoft YaHei', 'SimHei', serif; fill: #2c2416; }
+      .box-text { font: 400 16px 'Noto Serif SC', 'Microsoft YaHei', 'SimHei', serif; fill: #665747; }
+      .arrow { stroke: #a93226; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect width="1600" height="560" rx="22" fill="url(#paper)"/>
+  <path d="M390 82 C470 42 550 122 630 82 S790 42 870 82 S1030 122 1110 82" fill="none" stroke="#756655" stroke-width="2" opacity="0.38"/>
+  <text x="800" y="72" text-anchor="middle" class="title">系统架构</text>
+  <text x="800" y="112" text-anchor="middle" class="subtitle">输入感知 · 智能决策 · 群体运动 · 水墨呈现</text>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(55 180)">
+      <rect width="225" height="230" rx="12" fill="#f8f1df" stroke="#9b8b77" stroke-width="2"/>
+      <circle cx="34" cy="34" r="19" fill="#a93226"/>
+      <text x="34" y="40" text-anchor="middle" class="num">01</text>
+      <text x="112.5" y="92" text-anchor="middle" class="box-title">玩家输入</text>
+      <text x="112.5" y="137" text-anchor="middle" class="box-text">点击 · 拖拽</text>
+      <text x="112.5" y="169" text-anchor="middle" class="box-text">长按 · 连击</text>
+    </g>
+
+    <g transform="translate(310 180)">
+      <rect width="225" height="230" rx="12" fill="#f8f1df" stroke="#9b8b77" stroke-width="2"/>
+      <circle cx="34" cy="34" r="19" fill="#a93226"/>
+      <text x="34" y="40" text-anchor="middle" class="num">02</text>
+      <text x="112.5" y="92" text-anchor="middle" class="box-title">玩家画像</text>
+      <text x="112.5" y="137" text-anchor="middle" class="box-text">频率 · 侵略性</text>
+      <text x="112.5" y="169" text-anchor="middle" class="box-text">热区 · 节奏</text>
+    </g>
+
+    <g transform="translate(565 180)">
+      <rect width="225" height="230" rx="12" fill="#f5ead4" stroke="#a93226" stroke-width="3"/>
+      <circle cx="34" cy="34" r="19" fill="#a93226"/>
+      <text x="34" y="40" text-anchor="middle" class="num">03</text>
+      <text x="112.5" y="92" text-anchor="middle" class="box-title">AI 导演</text>
+      <text x="112.5" y="137" text-anchor="middle" class="box-text">效用函数</text>
+      <text x="112.5" y="169" text-anchor="middle" class="box-text">实时评分</text>
+    </g>
+
+    <g transform="translate(820 180)">
+      <rect width="225" height="230" rx="12" fill="#f8f1df" stroke="#9b8b77" stroke-width="2"/>
+      <circle cx="34" cy="34" r="19" fill="#a93226"/>
+      <text x="34" y="40" text-anchor="middle" class="num">04</text>
+      <text x="112.5" y="92" text-anchor="middle" class="box-title">队形策略</text>
+      <text x="112.5" y="137" text-anchor="middle" class="box-text">巡游 · 警戒 · 归群</text>
+      <text x="112.5" y="169" text-anchor="middle" class="box-text">V 阵 · 环形 · 漩涡</text>
+    </g>
+
+    <g transform="translate(1075 180)">
+      <rect width="225" height="230" rx="12" fill="#f8f1df" stroke="#9b8b77" stroke-width="2"/>
+      <circle cx="34" cy="34" r="19" fill="#a93226"/>
+      <text x="34" y="40" text-anchor="middle" class="num">05</text>
+      <text x="112.5" y="92" text-anchor="middle" class="box-title">Boids 运动</text>
+      <text x="112.5" y="137" text-anchor="middle" class="box-text">分离 · 对齐</text>
+      <text x="112.5" y="169" text-anchor="middle" class="box-text">聚合 · 避让</text>
+    </g>
+
+    <g transform="translate(1330 180)">
+      <rect width="225" height="230" rx="12" fill="#f8f1df" stroke="#9b8b77" stroke-width="2"/>
+      <circle cx="34" cy="34" r="19" fill="#a93226"/>
+      <text x="34" y="40" text-anchor="middle" class="num">06</text>
+      <text x="112.5" y="92" text-anchor="middle" class="box-title">水墨渲染</text>
+      <text x="112.5" y="137" text-anchor="middle" class="box-text">鱼群 · 墨迹</text>
+      <text x="112.5" y="169" text-anchor="middle" class="box-text">流场 · 宣纸</text>
+    </g>
+  </g>
+
+  <path class="arrow" d="M284 295 H300"/>
+  <path class="arrow" d="M539 295 H555"/>
+  <path class="arrow" d="M794 295 H810"/>
+  <path class="arrow" d="M1049 295 H1065"/>
+  <path class="arrow" d="M1304 295 H1320"/>
+
+  <text x="800" y="485" text-anchor="middle" class="subtitle">AI 决定群体策略，Boids 负责个体运动，Canvas 呈现最终画面</text>
+  <rect x="758" y="514" width="84" height="5" rx="2.5" fill="#a93226" opacity="0.82"/>
+</svg>
